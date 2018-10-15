@@ -42,3 +42,4 @@ class Gyver():
             Place the MyGyver image
         """
         self.window.blit(self.image, (self.xmac, self.ymac))
+
