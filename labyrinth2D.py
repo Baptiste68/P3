@@ -131,3 +131,4 @@ class Labyrinth2D(Labyrinth):
             if xl < self.width - 1:
                 xl = xl + 1
             x, yl = 0, 0
+
