@@ -36,3 +36,4 @@ class McObjects():
         x_obj = self.x_o * wgrd
         y_obj = self.y_o * wgrd
         return x_obj, y_obj
+
