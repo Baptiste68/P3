@@ -117,3 +117,4 @@ class Labyrinth:
                 print(' .'+''.join(self.laby[i]))
             else:
                 print(' '+'|'+''.join(self.laby[i]))
+
