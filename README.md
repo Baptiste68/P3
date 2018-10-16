@@ -5,11 +5,9 @@ Ce rep contient tous les fichiers nécessaires pour lancer le jeu du projet 3.
 ## Installation
 
 Créez un environement virtuel Python:
-
 virtualenv -p python3 env
 
 Ensuite, installez les dépendances en utilisant le fichier "requirements.txt":
-
 pip install -r requirements.txt
 
 ## Jouer au jeu
