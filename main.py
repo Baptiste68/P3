@@ -47,7 +47,7 @@ def mctookobj(xobj, objects, xmc, ymc, objectstaken):
     """
     for obj in objects:
         x_obj, y_obj = obj.get_abs_crd(WGRD)
-        if (x_obj <= xmc <= x_obj + WWALLV) and (y_obj <= ymc <= y_obj + WWALLV):
+        if obj.get_rect(WGRD, WWALLV, HWALLH).colliderect(mc_gyver.getrect()):
             objects.remove(obj)
             obj.x_o = HEIGHT + xobj
             obj.y_o = 1
