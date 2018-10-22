@@ -14,7 +14,7 @@ from mc_objects import McObjects
 from gyver import Gyver
 
 # Initialisation of the Labyrinth
-LABYRINTH = Labyrinth2D(5, 5, 50, 20, 20)
+LABYRINTH = Labyrinth2D(15, 15, 50, 20, 20)
 LABYRINTH.generate_lab()
 LABYRINTH.show_in_console()
 
@@ -40,7 +40,7 @@ YETHER = randint(0, HEIGHT - 1)
 WINDOW = LABYRINTH.window
 
 
-def mctookobj(xobj, objects, xmc, ymc, objectstaken):
+def mctookobj(xobj, objects, mc_gyver, objectstaken):
     """
         Check if McGyver take an object.
         If yes, the object go to taken objects
@@ -254,7 +254,7 @@ def main():
             # Otherwise we refresh the display
             LABYRINTH.mywalls = []
             LABYRINTH.draw_lab()
-            xtake = mctookobj(xtake, objects, xmc, ymc, objectstaken)
+            xtake = mctookobj(xtake, objects, mc_gyver, objectstaken)
             place_obj(objects, objectstaken)
             if canpass(objectstaken):
                 place_guard(0)
