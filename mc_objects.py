@@ -4,7 +4,7 @@
 """
     This is use to define the classe object
 """
-
+import pygame
 
 class McObjects():
     """
