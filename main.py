@@ -46,7 +46,6 @@ def mctookobj(xobj, objects, xmc, ymc, objectstaken):
         If yes, the object go to taken objects
     """
     for obj in objects:
-        x_obj, y_obj = obj.get_abs_crd(WGRD)
         if obj.get_rect(WGRD, WWALLV, HWALLH).colliderect(mc_gyver.getrect()):
             objects.remove(obj)
             obj.x_o = HEIGHT + xobj
