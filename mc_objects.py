@@ -29,11 +29,11 @@ class McObjects():
         self.window.blit(self.image, (self.x_o * wsol + wmurv * 2 / 3,
                                       self.y_o * wsol + hmurh * 2 / 3))
 
-    def get_abs_crd(self, wgrd):
+    def get_rect(self, wgrd, wwallv, hwallh):
         """
-            Get the absolute position of the object
-        """
-        x_obj = self.x_o * wgrd
-        y_obj = self.y_o * wgrd
-        return x_obj, y_obj
+            Function that return the rectangle representing the object
+        """    
+        x = self.x_o * wgrd + wwallv * 2 / 3
+        y = self.y_o * wgrd + hwallh * 2 / 3
+        return pygame.Rect(x, y, wwallv, hwallh)
 
